@@ -9,6 +9,9 @@
      * Version: 1.0
      * Description: Chat UI for the users in the Wordpress installation. Users can chat between each other using this plugin.
      * Tags: Wordpress,Chat,Users
+     * Text Domain: wp-user-chat
+     * License:     GPL-2.0+
+     * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
      *
      */
 
