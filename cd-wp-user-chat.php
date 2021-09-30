@@ -3,7 +3,7 @@
     /**
      *
      * Plugin Name: WP User Chat
-     * Plugin URI: https://github.com/craig-davey96/wp-user-chat
+     * Plugin URI: https://github.com/craig-davey96/wp-user-chat/tree/master
      * Author: Craig Davey
      * Author URI: https://github.com/craig-davey96
      * Version: 1.0
@@ -20,5 +20,7 @@
 
     define('WPUC_INC' , WPUC_DIR.'/includes/');
     define('WPUC_VIEWS' , WPUC_DIR.'/views/');
+
+    define('WPUC_ASSETS' , WPUC_URL.'/assets/');
 
     include 'class.wp-user-chat.php';
