@@ -18,9 +18,16 @@
     define('WPUC_DIR' , plugin_dir_path(__FILE__));
     define('WPUC_URL' , plugin_dir_url(__FILE__));
 
-    define('WPUC_INC' , WPUC_DIR.'/includes/');
-    define('WPUC_VIEWS' , WPUC_DIR.'/views/');
+    define('WPUC_INC' , WPUC_DIR.'includes/');
+    define('WPUC_VIEWS' , WPUC_DIR.'views/');
 
-    define('WPUC_ASSETS' , WPUC_URL.'/assets/');
+    define('WPUC_ASSETS' , WPUC_URL.'assets/');
+
+    // Create the db tables on activation
+
+    include WPUC_INC.'class.create-db-table.php';
+    register_activation_hook( __FILE__, array('wpucCreateDBTable' , 'createMessagesDBTable') );
+
+    // Add the main class
 
     include 'class.wp-user-chat.php';

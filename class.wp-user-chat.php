@@ -11,6 +11,7 @@
         public static function includeFilesInIncludes(){ // Include all the files inside the includes folder
 
             include WPUC_INC.'class.admin-pages.php';
+            include WPUC_INC.'class.styles-scripts.php';
 
         }
 
